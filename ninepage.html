@@ -4,48 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HGeels | NINE WEST</title>
+    <link rel = "icon" href = "https://lh3.googleusercontent.com/vOkdv6GWvUCyLLjzjSUrewsZRJHylWCMhT9eYX6q8AEMZ_Tfk942Ur7OkAmobVZ2Ag"  type = "image/x-icon">
+    <link rel="stylesheet" href="./Style/navbar.css">
+    <link rel="stylesheet" href="./Style/footer.css">
+    <link rel="stylesheet" href="./Style/ninepage.css">
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" 	crossorigin="anonymous"></script>>
 </head>
-<style>
-    #vnavbar{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    #box{
-        display: flex;
-        height: 2000px;
-    }
-
-    #leftbox{
-        margin-left: 100px;
-        flex: 3;
-    }
-
-    #rightbox{
-        flex: 2;
-        margin-left: 40px;
-    }
-
-    p{
-        font-size: 20px;
-    }
-
-</style>
 <body>
-    
-    <div id="vnavbar">
-        <div onclick="newpage()">NEW</div>
-        <div onclick="shoespage()">SHOES</div>
-        <div onclick="heelspage()">HEELS</div>
-        <div onclick="bootspage()">BOOTS & BOOTIES</div>
-        <div onclick="flats()">FLATS</div>
-        <div onclick="bagpage()">HANDBAGS</div>
-        <div onclick="watchpage()">WATCH</div>
-        <div onclick="ninepage()">N.I.N.E</div>
-        <div onclick="salepage()">SALE</div>
+    <div id="rrnavbar">
+        <!--  Nav Bar -->
     </div>
 
+    <div id="container">
+
+
+        
     <div id="box">
         <div id="leftbox">
             <div>
@@ -102,42 +76,24 @@
             </div>
         </div>
 
-
-       
     </div>
 
+    </div>
+
+    <div id="rrfooter">
+    </div>
 </body>
 </html>
-<script>
-     function newpage(){
-        window.location.href  ="newpage.html"
-    }
 
-    function shoespage(){
-        window.location.href = "shoespage.html"
-    }
+<script type="module">
 
-    function bagpage(){
-        window.location.href = "handbag.html"
-    }
-    function flats(){
-        window.location.href = "flatspage.html"
-    }
-    
-    function heelspage(){
-        window.location.href = "heelspage.html"
-    }
-    function bootspage(){
-        window.location.href = "bootspage.html"
-    }
+import navbar from "./components/navbar.js";
+    document.querySelector("#rrnavbar").innerHTML=navbar();
 
-    function watchpage(){
-        window.location.href = "watchpage.html"
-    }
-    function ninepage(){
-        window.location.href = "ninepage.html"
-    }
-    function salepage(){
-        window.location.href = "salepage.html"
-    }
+    document.querySelector("#rsigninhover").addEventListener("click",function(){
+        window.location.href="signin.html"
+    })
+
+    import footer from "./components/footer.js";
+    document.querySelector("#rrfooter").innerHTML=footer();
 </script>

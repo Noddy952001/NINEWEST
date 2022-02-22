@@ -4,54 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HGeels | NINE WEST</title>
+    <link rel = "icon" href = "https://lh3.googleusercontent.com/vOkdv6GWvUCyLLjzjSUrewsZRJHylWCMhT9eYX6q8AEMZ_Tfk942Ur7OkAmobVZ2Ag"  type = "image/x-icon">
+    <link rel="stylesheet" href="./Style/product.css">
+    <link rel="stylesheet" href="./Style/navbar.css">
+    <link rel="stylesheet" href="./Style/footer.css">
+    <link rel="stylesheet" href="./Style/heelspage.css">
+
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" 	crossorigin="anonymous"></script>>
 </head>
-<style>
-    #vnavbar{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    #vcombination{
-        margin-top: 50px;
-    }
-
-    #lab,#handelcolor,#handelsize,#handelwidth,#handelwidth,#handelheight,#handelcatgory,#handelprice{
-        background-color: white;
-        font-size: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 20px;
-        border: 1px solid gray;
-    }
-
-    #vheels{
-        display: grid;
-        grid-template-columns: repeat(4,400px);
-    }
-
-    .vtitle{
-        text-align: center;
-    }
-</style>
 <body>
-
-
-
-    <div id="vnavbar">
-        <div onclick="newpage()">NEW</div>
-        <div onclick="shoespage()">SHOES</div>
-        <div onclick="heelspage()">HEELS</div>
-        <div onclick="bootspage()">BOOTS & BOOTIES</div>
-        <div onclick="flats()">FLATS</div>
-        <div onclick="bagpage()">HANDBAGS</div>
-        <div onclick="watchpage()">WATCH</div>
-        <div onclick="ninepage()">N.I.N.E</div>
-        <div onclick="salepage()">SALE</div>
-    </div>
+    <div id="rrnavbar">
+        <!--  Nav Bar -->
     </div>
 
+    <div id="container">
 
+        
     <div id="vcombination">
 
         <select name=""  id="handelcolor" onchange="handelcolor()" >
@@ -110,11 +79,30 @@
 
 
 
+    </div>
+
+    <div id="rrfooter">
+        <!-- FOOTER -->
+    </div>
 </body>
 </html>
-<script>
 
-var data =[
+<script src="./Scripts/data.js"></script>
+<script type="module">
+
+import navbar from "./components/navbar.js";
+    document.querySelector("#rrnavbar").innerHTML=navbar();
+
+    document.querySelector("#rsigninhover").addEventListener("click",function(){
+        window.location.href="signin.html"
+    })
+
+    import footer from "./components/footer.js";
+    document.querySelector("#rrfooter").innerHTML=footer();
+</script>
+
+<script>
+    var data =[
     {
         image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.WNCARA2-BLK02.RZ_400x.jpg?v=1638904598%27%20data-src=",
         title : "Cara Dress Pumps",
@@ -553,39 +541,4 @@ localStorage.setItem('user', JSON.stringify(data));
     window.onload = function(){
         setHtml();
     }
-    function newpage(){
-        window.location.href  ="newpage.html"
-    }
-
-    function shoespage(){
-        window.location.href = "shoespage.html"
-    }
-
-    function bagpage(){
-        window.location.href = "handbag.html"
-    }
-    function flats(){
-        window.location.href = "flatspage.html"
-    }
-    
-    function heelspage(){
-        window.location.href = "heelspage.html"
-    }
-    function bootspage(){
-        window.location.href = "bootspage.html"
-    }
-
-    function watchpage(){
-        window.location.href = "watchpage.html"
-    }
-    function ninepage(){
-        window.location.href = "ninepage.html"
-    }
-    function salepage(){
-        window.location.href = "salepage.html"
-    }
-
-    
-
 </script>
-

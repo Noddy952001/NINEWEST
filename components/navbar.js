@@ -1,72 +1,40 @@
 function navbar(){
-    return `<div id="vnavbar">
-    <div onclick="newpage()">NEW</div>
-    <div onclick="">SHOES</div>
-    <div onclick="">HEELS</div>
-    <div onclick="">BOOTS & BOOTIES</div>
-    <div onclick="">FLATS</div>
-    <div onclick="">HANDBAGS</div>
-    <div onclick="">WATCH</div>
-    <div onclick="">N.I.N.E</div>
-    <div onclick="">SALE</div>
-</div>
-
-
-<div id="vcombination">
-
-    <select name=""  id="handelcolor" onchange="handelcolor()" >
-        <option value="">Color</option>
-        <option value="red">Red</option>
-        <option value="pink">Pink</option>
-        <option value="multi">Multi</option>
-        <option value="black">black</option>
-        <option value="yellow">yellow</option>
-        <option value="cream">cream</option>
-    </select>
-    
-    <select name=""  id="handelsize" onchange="handelsize()" >
-        <option value="">Size</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-    </select>
-
-    <select name=""  id="handelwidth" onchange="handelwidth()" >
-        <option value="">Width</option>
-        <option value="M">M</option>
-        <option value="W">w</option>
-    </select>
-
-    <select name=""  id="handelheight" onchange="handelheight()" >
-        <option value="">Heel Height</option>
-        <option value="Heigh">Heigh</option>
-        <option value="Low">Low</option>
-        <option value="Mid">Mid</option>
-    </select>
-
-    
-    <select name=""  id="handelcatgory" onchange="handelcatgory()" >
-        <option value="">Category</option>
-        <option value="Boot">Boot</option>
-        <option value="Flats">Flats</option>
-        <option value="Heels">Heels</option>
-    </select>
-
-    <select name=""  id="handelprice" onchange="handelprice()" >
-        <option value="">Price</option>
-        <option value="89.00">Under$109</option>
-        <option value="109.00">Under$170</option>
-        <option value="209.00">Under$260</option>
-    </select>
-
-    <select name=""  id="lab" onchange="handelpriceshort()" >
-        <option value="">FEATURE</option>                                  
-        <option value="low">Low to High</option>
-        <option value="high">High to Low</option>
-    </select>
-</div>
-
-<div id="vheels"></div>`
+    return ` <div id="rnavbar">
+    <div id="rnavleft">
+        <div id="rnavlefthead">
+            <a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0267/3737/7324/files/NineWest_240x40_ec01f287-6403-4e74-9564-213d2f46089b_400x.jpg?v=1585845052" alt=""></a>
+        </div>
+        <div id="rnavleftlinks">
+            <a href="newpage.html">NEW</a>
+            <a href="shoespage.html">SHOES</a>
+            <a href="heelspage.html">HEELS</a>
+            <a href="product.html">BOOTS & BOOTIES</a>
+            <a href="flatspage.html">FLATS</a>
+            <a href="handbag.html">HANDBAGS</a>
+            <a href="watchpage.html">WATCHES</a>
+            <a href="ninepage.html">N.I.N.E</a>
+            <a href="product.html">SALE</a>
+        </div>
+    </div>
+    <div id="rnavright">
+        <div id="rnavrightlogin">
+            <p>JOIN 9W REWARDS |</p>
+            <p id="rsigninhover">SIGN IN</p>
+            <p>FREE SHIPPING ORDERS $60+</p>
+        </div>
+        <div id="rnavrightsearch">
+            <div class="roverlap">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div id="rlogocart">
+                <i class="fas fa-heart"></i>
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+            
+        </div>
+    </div>
+</div>`
 }
 
 export default navbar
